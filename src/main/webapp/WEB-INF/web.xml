@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <display-name>WebApp</display-name>
+  <servlet>
+    <servlet-name>IndexServ</servlet-name>
+    <servlet-class>IndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexServ</servlet-name>
+    <url-pattern>/WebApp/ProductView</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GoToAdd</display-name>
+    <servlet-name>GoToAdd</servlet-name>
+    <servlet-class>GoToAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GoToAdd</servlet-name>
+    <url-pattern>/WebApp/Add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SearchServlet</display-name>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/WebApp/SearchServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
